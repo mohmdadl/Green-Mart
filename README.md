@@ -31,7 +31,7 @@ green-mart/
 
 ## 🚀 Getting Started
 ### 1️⃣ Clone the repo
-git clone https://github.com/your-username/green-mart.git  
+git clone https://github.com/mohmdadl/Green-Mart.git  
 cd green-mart  
 
 ### 2️⃣ Install dependencies
