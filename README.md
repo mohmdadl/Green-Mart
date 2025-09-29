@@ -27,19 +27,7 @@ A modern **plant marketplace** built with **Next.js 14** and **Tailwind CSS**. B
 - Tailwind CSS – Utility-first CSS framework  
 - TypeScript – Strongly typed JavaScript  
 - JSON Server – Mock REST API  
----
-## 📂 Project Structure
-green-mart/  
-│── app/  
-│   ├── products/  
-│   │   ├── [id]/page.tsx   # Product details page  
-│   │   ├── loading.tsx     # Loading spinner  
-│   │   └── page.tsx        # Products list  
-│── public/  
-│── db.json                 # Mock API data (plants)  
-│── package.json  
-│── tailwind.config.js  
-│── README.md  
+ 
 ---
 ## 🚀 Getting Started
 ### 1️⃣ Clone the repo
