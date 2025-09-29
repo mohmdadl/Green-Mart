@@ -17,15 +17,22 @@ type Product = {
   };
 };
 
+// ✅ استخدم النوع المدمج اللي Next.js نفسه بيوفره
 export default async function ProductPage({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
-  const res = await fetch(`http://localhost:5000/plants/${params.id}`);
+  const { id } = await params; // لازم await عشان Next.js 15 بيرجع Promise
+
+  const res = await fetch(`http://localhost:5000/plants/${id}`, {
+    cache: "no-store",
+  });
+
   if (!res.ok) {
     notFound();
   }
+
   const product: Product = await res.json();
 
   return (

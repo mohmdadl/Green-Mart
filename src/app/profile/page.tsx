@@ -3,7 +3,7 @@ import { redirect } from 'next/navigation';
 import Image from 'next/image';
 // This assumes your authOptions are defined in the handler file
 // Make sure the path is correct for your project structure
-import { authOptions } from '@/app/api/auth/[...nextauth]/route';
+import { authOptions } from "@/app/lib/auth";
 import SignOutButton from '@/app/components/SignOutButton';
 
 export default async function ProfilePage() {
